@@ -1,5 +1,5 @@
 export { makeHome };
-import { deleteContent } from "./deleteContent";
+import { deleteContent } from "./deleteContent.js";
 import { app } from "./main";
 
 const section = document.createElement("section");

@@ -1,6 +1,6 @@
 import "./style.css";
 import { makeHome } from "./makeHome.js";
-import { makeMenu } from "./makeMenu";
+import { makeMenu } from "./makeMenu.js";
 
 const home = document.querySelector("#home");
 const menu = document.querySelector("#menu");
