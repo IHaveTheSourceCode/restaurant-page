@@ -6,7 +6,7 @@ const section = document.createElement("section");
 section.classList.add("home-page");
 
 const image = document.createElement("img");
-image.src = "/hot-food-icon.png";
+image.src = "/restaurant-page/hot-food-icon.png";
 image.classList.add("food-icon");
 image.alt = "hot apple pie.";
 

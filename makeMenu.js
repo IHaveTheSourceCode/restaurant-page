@@ -30,7 +30,7 @@ function makeMenu() {
 function createPizza(src, alt) {
   const pizza = document.createElement("img");
   pizza.classList.add("pizza-image");
-  pizza.src = src;
+  pizza.src = "/restaurant-page" + src;
   pizza.alt = alt;
 
   return pizza;
