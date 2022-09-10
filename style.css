@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@400;700&display=swap");
+
+:root {
+  --font-title: "Dancing Script", cursive;
+  --font-text: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  font-family: sans-serif; /* fallback */
+  color: white;
+}
+
+body {
+  background-image: url("/main-theme.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* HOME PAGE */
+.food-icon {
+  width: 10rem;
+  margin-top: 10vh;
+}
+
+.header-main {
+  padding: 1rem;
+  font-size: 5rem;
+  font-family: var(--font-title);
+  border-top: 5px solid orange;
+  border-bottom: 5px solid orange;
+}
+
+.description-main {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-family: var(--font-text);
+  font-weight: bold;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav > button {
+  font-size: 1.5rem;
+  font-family: var(--font-title);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+nav > button:hover {
+  text-decoration: underline;
+}
+
+/* MENU PAGE */
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-page > h1 {
+  font-size: 4rem;
+  font-family: var(--font-title);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.pizzas-container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 25vw));
+  gap: 1rem;
+}
+
+.pizza-image {
+  object-fit: cover;
+  width: min(25vw, 350px);
+  height: min(25vw, 350px);
+  border-radius: 50%;
+}
