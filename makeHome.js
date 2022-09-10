@@ -1,6 +1,6 @@
 export { makeHome };
 import { deleteContent } from "./deleteContent.js";
-import { app } from "./main";
+import { app } from "./main.js";
 
 const section = document.createElement("section");
 section.classList.add("home-page");
